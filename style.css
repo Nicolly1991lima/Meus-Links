@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cartao {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: #0066cc;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    background-color: #004c99;
+}
+
+button {
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos aplicados quando o modo escuro é ativado pelo JS */
+body.modo-escuro {
+    background-color: #121212;
+    color: #f0f2f5;
+}
+
+body.modo-escuro .cartao {
+    background-color: #1e1e1e;
+}
